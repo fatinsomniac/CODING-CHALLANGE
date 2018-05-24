@@ -45,25 +45,25 @@ piramida_fibonacci(8);
 ```php
 $hasil = "$angka_sekarang";
 ```
-Fungsinya agar $hasil menampilkan $angka_sekarang setiap sesudah pengulangan
+Fungsinya agar $hasil menampilkan $angka_sekarang setiap sesudah pengulangan<br>
 
 ```php
 for ($i=0; $i<$jumlah-1; $i++)
   {
     $output = $angka_sekarang + $angka_sebelumnya;
 ```
-Untuk menghitung angka fibonacci
+Untuk menghitung angka fibonacci<br>
 
 ```php
 $hasil = $hasil." $output";
 ```
-Agar hasilnya($output) ditambahkan ke string $hasil
+Agar hasilnya($output) ditambahkan ke string $hasil<br>
 
 ```php
 $angka_sebelumnya = $angka_sekarang;
 $angka_sekarang = $output;
 ```
-Nilai yang di siapkan untuk perhitungan berikutnya
+Nilai yang di siapkan untuk perhitungan berikutnya<br>
 
 ```php
 function piramida_fibonacci($tingkat){
@@ -74,9 +74,9 @@ function piramida_fibonacci($tingkat){
   }
 }
 ```
-Proses pengulangan untuk membentuk sebuah piramida
+Proses pengulangan untuk membentuk sebuah piramida<br>
 
 ```php
 piramida_fibonacci(8);
 ```
-Untuk menentukan berapa jumlah baris yang di perlukan
+Untuk menentukan berapa jumlah baris yang di perlukan<br>
