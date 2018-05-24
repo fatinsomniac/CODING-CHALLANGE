@@ -52,7 +52,7 @@ for ($i=0; $i<$jumlah-1; $i++)
   {
     $output = $angka_sekarang + $angka_sebelumnya;
 ```
-Untuk menghitung angka fibonacci<br>
+Untuk menghitung angka fibonacci.
 
 ```php
 $hasil = $hasil." $output";
