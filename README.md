@@ -7,28 +7,26 @@ Piramida Fibonacci
 # SCRIPT & PENJELASAN
 ### Script :
 
-```html
+```php
 <?php
 function print_deret_fibonacci($jumlah)
 {
   $angka_sebelumnya=0;
   $angka_sekarang=1;
   
-  $hasil = "$angka_sekarang"; // agar yang di tampilkan adalah angka_sekarang
+  $hasil = "$angka_sekarang";
   for ($i=0; $i<$jumlah-1; $i++)
   {
-    $output = $angka_sekarang + $angka_sebelumnya; // hitung angka fibonacci
+    $output = $angka_sekarang + $angka_sebelumnya;
     
-    $hasil = $hasil." $output"; // hasilnya($output) ditambahkan ke string $hasil
+    $hasil = $hasil." $output";
   
-    //siapkan angka untuk perhitungan berikutnya
     $angka_sebelumnya = $angka_sekarang;
     $angka_sekarang = $output;
   }
   return $hasil;
 }
 
-//proses pengulangan untuk membentuk sebuah piramida
 function piramida_fibonacci($tingkat){
   for ($i=1; $i<$tingkat+1; $i++)
   {
@@ -37,8 +35,48 @@ function piramida_fibonacci($tingkat){
   }
 }
 
-//Untuk menentukan berapa jumlah baris yang di perlukan
 piramida_fibonacci(8);
 
 ?>
 ```
+
+### Penjelasan :
+
+```php
+$hasil = "$angka_sekarang";
+```
+Fungsinya agar $hasil menampilkan $angka_sekarang setiap sesudah pengulangan
+
+```php
+for ($i=0; $i<$jumlah-1; $i++)
+  {
+    $output = $angka_sekarang + $angka_sebelumnya;
+```
+Untuk menghitung angka fibonacci
+
+```php
+$hasil = $hasil." $output";
+```
+Agar hasilnya($output) ditambahkan ke string $hasil
+
+```php
+$angka_sebelumnya = $angka_sekarang;
+$angka_sekarang = $output;
+```
+Nilai yang di siapkan untuk perhitungan berikutnya
+
+```php
+function piramida_fibonacci($tingkat){
+  for ($i=1; $i<$tingkat+1; $i++)
+  {
+    echo print_deret_fibonacci($i);
+    echo "<br>";
+  }
+}
+```
+Proses pengulangan untuk membentuk sebuah piramida
+
+```php
+piramida_fibonacci(8);
+```
+Untuk menentukan berapa jumlah baris yang di perlukan
