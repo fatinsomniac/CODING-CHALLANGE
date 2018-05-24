@@ -4,7 +4,9 @@ Coding Challange Software Enginner
 # JUDUL PROYEK
 Piramida Fibonacci
 
-# PENJELASAN & SCRIPT
+# SCRIPT & PENJELASAN
+Script :
+
 ```html
 <?php
 function print_deret_fibonacci($jumlah)
