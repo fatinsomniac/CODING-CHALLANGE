@@ -5,7 +5,7 @@ Coding Challange Software Enginner
 Piramida Fibonacci
 
 # SCRIPT & PENJELASAN
-## Script :
+### Script :
 
 ```html
 <?php
